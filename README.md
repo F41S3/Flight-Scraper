@@ -17,3 +17,5 @@ TODO:
   Automatically note what flights took delays and by how much. 
   Comment code
   Refactor code to be more generalizable
+  Currently the code is a proof of concept and cannot be shipped as a standalone package
+  
