@@ -91,14 +91,14 @@ opsLog = []
 for i in arrivals:
     if "Estimated" in i or "Arrived" in i:
         if "Sunwing" in i[-1]:
-            opsLog.append([i[-1], " / ", i[5][2:], "-", "$", " / ", "^", " / Onload: / Offload: / ", "\nFlight notes: \n"])
+            opsLog.append([i[-1], " / Flt: ", i[5][2:], "-", "$", " / Reg: ", "XXX", " / Bags Off: / Bags On: / ", "\nFlight notes: \n"])
         else:
-            opsLog.append([i[-1], " / ", i[5][2:], "-", "RON", " / ", i[-2], " / Onload: / Offload: / ", "\nFlight notes: \n"])
+            opsLog.append([i[-1], " / Flt: ", i[5][2:], "-", "RON", " / Reg: ", i[-2], " / Bags Off: / Bags On: / ", "\nFlight notes: \n"])
     elif "Scheduled" in i:
         if "Sunwing" in i[-1]:
-            opsLog.append([i[-1], " / ", i[3][2:], "-", "$", " / ", "^", " / Onload: / Offload: / ", "\nFlight notes: \n"])
+            opsLog.append([i[-1], " / Flt: ", i[3][2:], "-", "$", " / Reg: ", "XXX", " / Bags Off: / Bags On: / ", "\nFlight notes: \n"])
         else:
-            opsLog.append([i[-1], " / ", i[3][2:], "-", "RON", " / ", i[-2], " / Onload: / Offload: / ", "\nFlight notes: \n"])
+            opsLog.append([i[-1], " / Flt: ", i[3][2:], "-", "RON", " / Reg: ", i[-2], " / Bags Off: / Bags On: / ", "\nFlight notes: \n"])
 
 for i in opsLog:
     reg = i[6]
